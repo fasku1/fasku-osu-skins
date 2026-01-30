@@ -43,7 +43,9 @@
 
 .skin-img-16by9 {
   width: 100%;
-  aspect-ratio: 16 / 9; /* Forces the image to stay in widescreen */
-  object-fit: cover;    /* Prevents the image from stretching/squishing */
-  background-color: #000; /* Optional: adds a black background if the image is weirdly shaped */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;   /* Fills the container completely */
+  object-position: center; /* Center the important part */
 }
+
+

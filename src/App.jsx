@@ -20,14 +20,14 @@ function App() {
           <Carousel.Item>
             <Card.Img
               variant="top"
-              src="../temp/bluey.png"
-              class=".skin-img-16by9"
+              src="../temp/skin0-0.jpg"
+              
             />
           </Carousel.Item>
           <Carousel.Item>
             <Card.Img
               variant="top"
-              src="../temp/bluey.png"
+              src="./assets/react.svg"
               class=".skin-img-16by9"
             />
           </Carousel.Item>
