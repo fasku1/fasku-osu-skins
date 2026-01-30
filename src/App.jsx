@@ -21,16 +21,22 @@ function App() {
             <Card.Img
               variant="top"
               src="../temp/bluey.png"
+              class=".skin-img-16by9"
             />
           </Carousel.Item>
           <Carousel.Item>
             <Card.Img
               variant="top"
               src="../temp/bluey.png"
+              class=".skin-img-16by9"
             />
           </Carousel.Item>
         </Carousel>
+        <Card.Body>
+          <Card.Title>"Osu Skin1"</Card.Title>
+        </Card.Body>
       </Card>
+      
     </>
   )
 }
