@@ -6,6 +6,9 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import skin00 from './assets/skin-images/skin0-0.jpg';
+import skin01 from './assets/skin-images/skin0-1.jpg';
+
 
 
 
@@ -22,14 +25,14 @@ function App() {
           <Carousel.Item>
             <Card.Img
               variant="top"
-              src="../temp/skin0-0.jpg"
+              src={skin00}
               class="skin-img"
             />
           </Carousel.Item>
           <Carousel.Item>
             <Card.Img
               variant="top"
-              src="../temp/skin0-1.jpg"
+              src={skin01}
               class="skin-img"
             />
           </Carousel.Item>
