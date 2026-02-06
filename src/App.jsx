@@ -54,8 +54,16 @@ function App() {
             </Carousel>
             <Card.Body>
               <Card.Title>
-                <a href="..." target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#A2FF00' }}>
-                  ⬇️ fireku v8
+                <a
+                  href="https://drive.google.com/file/d/1MEl35a3YGfV0ilUJI-RbshcN-jBJoi6l/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={click}
+                  style={{
+                    textDecoration: 'none',
+                    color: '#A2FF00'
+                  }}>
+                  ⬇️ fireku v8 ⬇️
                 </a>
               </Card.Title>
             </Card.Body>
@@ -89,8 +97,16 @@ function App() {
             </Carousel>
             <Card.Body>
               <Card.Title>
-                <a href="..." target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#A2FF00' }}>
-                  ⬇️ bashua priv skin
+                <a
+                  href="https://drive.google.com/file/d/1QRL7XPXKLdeyGbppr-y4Cug6OmMh5vUI/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={click}
+                  style={{
+                    textDecoration: 'none',
+                    color: '#A2FF00'
+                  }}>
+                  ⬇️ bashua priv skin ⬇️
                 </a>
               </Card.Title>
             </Card.Body>
