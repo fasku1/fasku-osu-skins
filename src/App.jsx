@@ -43,9 +43,9 @@ function App() {
 
       {/* Add align-items-stretch to the Row */}
       <Row className="justify-content-center align-items-stretch g-4">
-        <Col xs="auto">
+        <Col xs={12} md={5} lg={4}>
           {/* Add h-100 to the Card */}
-          <Card className="mb-3 h-100">
+          <Card className="mb-3 h-100" xs="auto">
             <Carousel onSelect={click} interval={null}>
               <Carousel.Item>
                 <Card.Img variant="top" src={skin00} className="skin-img" />
@@ -70,15 +70,16 @@ function App() {
           </Card>
         </Col>
 
-        <Col xs="auto">
+        <Col xs={12} md={5} lg={4}>
           {/* Add h-100 to this Card too */}
-          <Card className="h-100">
+          <Card className="h-100" xs="auto">
             <Carousel onSelect={click} interval={null}>
               <Carousel.Item>
                 <div
                   className="skin-placeholder"
                   style={{
-                    width: '484px',
+                    width: '100%',         // Fill the available space on mobile
+                    maxWidth: '484px',     // But don't exceed 484px on desktop
                     aspectRatio: '16 / 9',
                     display: 'flex',
                     flexDirection: 'column',
@@ -88,6 +89,7 @@ function App() {
                     border: '2px dashed rgba(255, 255, 255, 0.1)',
                     borderRadius: '15px',
                     color: '#ffffffa7',
+                    margin: '0 auto'       // Keeps it centered if the card grows wider
                   }}
                 >
                   <span style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>No img yet :(</span>
@@ -113,9 +115,6 @@ function App() {
           </Card>
         </Col>
       </Row>
-
-
-
     </>
   )
 }
