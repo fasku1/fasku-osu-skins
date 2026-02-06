@@ -5,6 +5,31 @@
   text-align: center;
 }
 
+
+body {
+  /* Use a dark background color as a fallback while the image loads */
+  background-color: #0b0b0b; 
+  
+  background-image: url('./assets/anime-girl-night-city.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Use fixed for PC, but we will adjust for mobile below */
+  background-attachment: fixed;
+
+  /* This ensures the body is at least the height of the screen */
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh; 
+}
+
+.card {
+  transition: transform 0.2s ease;
+  background-color: rgba(0, 0, 0, 0.159) !important;
+  transform: translateY(-5px) !important;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -45,4 +70,5 @@
   width: 50%;
   height: 'auto';
   object-fit: cover;   /* Fills the container completely */
+
 }
