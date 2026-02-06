@@ -23,6 +23,7 @@ function App() {
 
   return (
     <>
+      <Card className="card-line"></Card>
       <h1 className="fw-bold light" style={{ color: '#FFFFFF', fontSize: '64px'  }}>Fasku Osu Skins</h1>
       <p className="light" style={{ color: '#FFFFFF' }}>this is where you can download all my osu skins :D</p>
 
