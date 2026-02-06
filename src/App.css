@@ -29,9 +29,16 @@ body {
 
 
 .card {
+  /* This prevents the card from growing wider than 500px (or your preferred width) */
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden; /* Ensures nothing pokes out the sides */
   transition: transform 0.2s ease;
   background-color: rgba(0, 0, 0, 0.159) !important;
   transform: translateY(-5px) !important;
+  padding: 0.5em;
+
 }
 
 .logo {
@@ -60,9 +67,6 @@ body {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-.card {
-  padding: 2em;
 }
 
 .card-line {
