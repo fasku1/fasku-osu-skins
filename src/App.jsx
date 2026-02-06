@@ -15,7 +15,7 @@ import wiiHover from './assets/sounds/wii-hover.wav'
 function App() {
   const [count, setCount] = useState(0)
 
-    function click() {
+  function click() {
     const audio = new Audio(wiiClick)
     audio.volume = 0.5 // 20% volume
     audio.play()
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      <h1 className="fw-bold light" style={{ color: '#FFFFFF' }}>Fasku Osu Skins</h1>
+      <h1 className="fw-bold light" style={{ color: '#FFFFFF', fontSize: '64px'  }}>Fasku Osu Skins</h1>
       <p className="light" style={{ color: '#FFFFFF' }}>this is where you can download all my osu skins :D</p>
 
       <Card className="mb-3">
@@ -49,8 +49,9 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: 'none', color: '#A2FF00' }}
+            className="light"
           >
-            fireku v8
+            ⬇️ fireku v8
           </a></Card.Title>
         </Card.Body>
       </Card>
@@ -79,8 +80,10 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: 'none', color: '#A2FF00' }}
+            className="light"
+
           >
-            bashua priv skin
+            ⬇️ bashua priv skin
           </a></Card.Title>
         </Card.Body>
       </Card>

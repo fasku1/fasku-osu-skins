@@ -57,18 +57,25 @@ body {
     animation: logo-spin infinite 20s linear;
   }
 }
-
 .card {
+
   padding: 2em;
 }
+
 
 .read-the-docs {
   color: #888;
 }
 
 .skin-img {
-  width: 50%;
-  height: 'auto';
-  object-fit: cover;   /* Fills the container completely */
-
+  /* Change this to 100% of the NOW THIN card */
+  width: 100%; 
+  max-width: 100%;
+  
+  /* Remove quotes from auto */
+  height: auto; 
+  
+  /* object-fit works best when a height is defined, 
+     but for a simple responsive image, auto height is better */
+  display: block;
 }
