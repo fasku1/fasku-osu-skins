@@ -41,70 +41,58 @@ function App() {
       <p className="light" style={{ color: '#FFFFFF' }}>this is where you can download all my osu skins :D</p>
 
 
-      <Row className="justify-content-center align-items-center">
-        {/* Image Column */}
+      {/* Add align-items-stretch to the Row */}
+      <Row className="justify-content-center align-items-stretch g-4">
         <Col xs="auto">
-          <Card className="mb-3">
+          {/* Add h-100 to the Card */}
+          <Card className="mb-3 h-100">
             <Carousel onSelect={click} interval={null}>
               <Carousel.Item>
-                <Card.Img
-                  variant="top"
-                  src={skin00}
-                  className="skin-img" // Use className in React, not class
-                />
+                <Card.Img variant="top" src={skin00} className="skin-img" />
               </Carousel.Item>
-              <Carousel.Item>
-                <Card.Img
-                  variant="top"
-                  src={skin01}
-                  className="skin-img"
-                />
-              </Carousel.Item>
+              {/* ... other items */}
             </Carousel>
             <Card.Body>
-              <Card.Title>  <a
-                href="https://drive.google.com/file/d/1MEl35a3YGfV0ilUJI-RbshcN-jBJoi6l/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: 'none', color: '#A2FF00' }}
-                className="light"
-              >
-                ⬇️ fireku v8
-              </a></Card.Title>
+              <Card.Title>
+                <a href="..." target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#A2FF00' }}>
+                  ⬇️ fireku v8
+                </a>
+              </Card.Title>
             </Card.Body>
-          </Card>        </Col>
-        {/* Text Column */}
+          </Card>
+        </Col>
+
         <Col xs="auto">
-          <Card>
+          {/* Add h-100 to this Card too */}
+          <Card className="h-100">
             <Carousel onSelect={click} interval={null}>
               <Carousel.Item>
                 <div
-                  className="skin-placeholder card"
+                  className="skin-placeholder"
                   style={{
-                    width: '100%',
-                    height: '200px',       // same height as images
+                    width: '484px',
+                    aspectRatio: '16 / 9',
                     display: 'flex',
+                    flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    backgroundColor: '#eee', // gray box
-                    color: '#555',
-                    fontSize: '1.2rem',
-                    color: '#ffffffa7'
+                    backgroundColor: 'rgba(255, 255, 255, 0.03)',
+                    border: '2px dashed rgba(255, 255, 255, 0.1)',
+                    borderRadius: '15px',
+                    color: '#ffffffa7',
                   }}
-                >No img yet :(</div>
+                >
+                  <span style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>No img yet :(</span>
+                  <p style={{ opacity: 0.5 }}>1920 x 1080 Preview Pending</p>
+                </div>
               </Carousel.Item>
             </Carousel>
             <Card.Body>
-              <Card.Title>  <a
-                href="https://drive.google.com/file/d/1QRL7XPXKLdeyGbppr-y4Cug6OmMh5vUI/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: 'none', color: '#A2FF00' }}
-                className="light"
-
-              >
-                ⬇️ bashua priv skin
-              </a></Card.Title>
+              <Card.Title>
+                <a href="..." target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#A2FF00' }}>
+                  ⬇️ bashua priv skin
+                </a>
+              </Card.Title>
             </Card.Body>
           </Card>
         </Col>
